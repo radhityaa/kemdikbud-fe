@@ -3,7 +3,7 @@ export const profiles = [
     { url: '/profile/tugasfungsi', label: 'Tugas & Fungsi' },
     { url: '/profile/sejarah', label: 'Sejarah' },
     { url: '/profile/timkerja', label: 'Tim Kerja' },
-    { url: '/', label: 'Janji & Maklumat Layanan' },
+    { url: '/profile/janjimaklumat', label: 'Janji & Maklumat Layanan' },
     { url: '/', label: 'Panduan Perilaku Core Value' },
     { url: '/', label: 'Kantor - Kantor BBGP Jabar' },
 ]

@@ -10,6 +10,7 @@ const VisionMission = lazy(() => import('./pages/Profile/VisionMission'))
 const JobFunction = lazy(() => import('./pages/Profile/JobFunction'))
 const History = lazy(() => import('./pages/Profile/History'))
 const WorkTeam = lazy(() => import('./pages/Profile/WorkTeam'))
+const PromiseProclamation = lazy(() => import('./pages/Profile/PromiseProclamation'))
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="tugafungsi" element={<JobFunction />} />
           <Route path="sejarah" element={<History />} />
           <Route path="timkerja" element={<WorkTeam />} />
+          <Route path="janjimaklumat" element={<PromiseProclamation />} />
         </Route>
 
       </Routes>
