@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-fixed {
+    @apply fixed z-[9999]
+}
+
+.hamburger-line {
+    @apply bg-blue-dark w-[30px] h-[2px] my-2 block
+}
+
+.hamburger-active>span:nth-child(1) {
+    @apply rotate-45
+}
+
+.hamburger-active>span:nth-child(2) {
+    @apply scale-0
+}
+
+.hamburger-active>span:nth-child(3) {
+    @apply -rotate-45
+}
+
+.btn-btn-more {
+    @apply bg-white border-2 border-blue-primary px-4 py-1 rounded-3xl text-lg text-blue-primary hover:bg-blue-primary hover:text-white transition duration-300 ease-in-out
+}
+
+.home__title {
+    @apply text-slate-700 font-bold text-xl md:text-3xl py-3
+}
+
+.home__card_image {
+    @apply rounded w-full h-[288px] object-fill hover:-skew-x-12 md:hover:-skew-x-0 md:hover:scale-110 transition duration-300 ease-in-out
+}
