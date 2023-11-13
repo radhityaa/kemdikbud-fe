@@ -2,6 +2,7 @@ import React from 'react'
 import App from '../../Layout/App'
 import ContentHeader from '../../../components/ContentHeader'
 import PanduanPerilaku from '../../../assets/images/panduanperilaku.png'
+import PanduanPerilaku2 from '../../../assets/images/panduanperilaku2.png'
 
 export default function BehaviorGuide() {
     return (
@@ -13,6 +14,12 @@ export default function BehaviorGuide() {
 
                 <div className='flex items-center justify-center'>
                     <img src={PanduanPerilaku} />
+                </div>
+
+                <p>Buku Panduan dapat diunduh <span className='text-blue-primary hover:underline cursor-pointer font-bold'>disini</span></p>
+
+                <div className='flex items-center justify-center'>
+                    <img src={PanduanPerilaku2} />
                 </div>
             </div>
         </App>
