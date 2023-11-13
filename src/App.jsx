@@ -14,6 +14,9 @@ const PromiseProclamation = lazy(() => import('./pages/Profile/PromiseProclamati
 const BehaviorGuide = lazy(() => import('./pages/Profile/BehaviorGuide'))
 const Office = lazy(() => import('./pages/Profile/Office'))
 
+// NOTE - Berita
+const Berita = lazy(() => import('./pages/Berita'))
+
 export default function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -37,6 +40,10 @@ export default function App() {
           <Route path="janji-maklumat" element={<PromiseProclamation />} />
           <Route path="panduan-perilaku-core-value" element={<BehaviorGuide />} />
           <Route path="office" element={<Office />} />
+        </Route>
+        {/* NOTE - Berita */}
+        <Route path="/berita">
+          <Route path="" element={<Berita />} />
         </Route>
 
       </Routes>
