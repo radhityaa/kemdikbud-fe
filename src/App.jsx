@@ -12,6 +12,7 @@ const History = lazy(() => import('./pages/Profile/History'))
 const WorkTeam = lazy(() => import('./pages/Profile/WorkTeam'))
 const PromiseProclamation = lazy(() => import('./pages/Profile/PromiseProclamation'))
 const BehaviorGuide = lazy(() => import('./pages/Profile/BehaviorGuide'))
+const Office = lazy(() => import('./pages/Profile/Office'))
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="tim-kerja" element={<WorkTeam />} />
           <Route path="janji-maklumat" element={<PromiseProclamation />} />
           <Route path="panduan-perilaku-core-value" element={<BehaviorGuide />} />
+          <Route path="office" element={<Office />} />
         </Route>
 
       </Routes>
