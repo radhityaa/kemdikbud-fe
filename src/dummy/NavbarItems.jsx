@@ -1,10 +1,10 @@
 export const profiles = [
-    { url: '/profile/visimisi', label: 'Visi & Misi' },
-    { url: '/profile/tugasfungsi', label: 'Tugas & Fungsi' },
+    { url: '/profile/visi-misi', label: 'Visi & Misi' },
+    { url: '/profile/tugas-fungsi', label: 'Tugas & Fungsi' },
     { url: '/profile/sejarah', label: 'Sejarah' },
-    { url: '/profile/timkerja', label: 'Tim Kerja' },
-    { url: '/profile/janjimaklumat', label: 'Janji & Maklumat Layanan' },
-    { url: '/', label: 'Panduan Perilaku Core Value' },
+    { url: '/profile/tim-kerja', label: 'Tim Kerja' },
+    { url: '/profile/janji-maklumat', label: 'Janji & Maklumat Layanan' },
+    { url: '/profile/panduan-perilaku-core-value', label: 'Panduan Perilaku Core Value' },
     { url: '/', label: 'Kantor - Kantor BBGP Jabar' },
 ]
 
