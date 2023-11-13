@@ -9,6 +9,7 @@ const Home = lazy(() => import('./pages/Home'))
 const VisionMission = lazy(() => import('./pages/Profile/VisionMission'))
 const JobFunction = lazy(() => import('./pages/Profile/JobFunction'))
 const History = lazy(() => import('./pages/Profile/History'))
+const WorkTeam = lazy(() => import('./pages/Profile/WorkTeam'))
 
 export default function App() {
   return (
@@ -26,9 +27,10 @@ export default function App() {
         {/* SECTION - Profile */}
         {/* NOTE - Vision And Mission */}
         <Route path="/profile">
-          <Route path="visionmission" element={<VisionMission />} />
-          <Route path="jobfunction" element={<JobFunction />} />
-          <Route path="history" element={<History />} />
+          <Route path="visimisi" element={<VisionMission />} />
+          <Route path="tugafungsi" element={<JobFunction />} />
+          <Route path="sejarah" element={<History />} />
+          <Route path="timkerja" element={<WorkTeam />} />
         </Route>
 
       </Routes>
