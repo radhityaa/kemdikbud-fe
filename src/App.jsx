@@ -11,6 +11,7 @@ const JobFunction = lazy(() => import('./pages/Profile/JobFunction'))
 const History = lazy(() => import('./pages/Profile/History'))
 const WorkTeam = lazy(() => import('./pages/Profile/WorkTeam'))
 const PromiseProclamation = lazy(() => import('./pages/Profile/PromiseProclamation'))
+const BehaviorGuide = lazy(() => import('./pages/Profile/BehaviorGuide'))
 
 export default function App() {
   return (
@@ -28,11 +29,12 @@ export default function App() {
         {/* SECTION - Profile */}
         {/* NOTE - Vision And Mission */}
         <Route path="/profile">
-          <Route path="visimisi" element={<VisionMission />} />
-          <Route path="tugafungsi" element={<JobFunction />} />
+          <Route path="visi-misi" element={<VisionMission />} />
+          <Route path="tugas-fungsi" element={<JobFunction />} />
           <Route path="sejarah" element={<History />} />
-          <Route path="timkerja" element={<WorkTeam />} />
-          <Route path="janjimaklumat" element={<PromiseProclamation />} />
+          <Route path="tim-kerja" element={<WorkTeam />} />
+          <Route path="janji-maklumat" element={<PromiseProclamation />} />
+          <Route path="panduan-perilaku-core-value" element={<BehaviorGuide />} />
         </Route>
 
       </Routes>
