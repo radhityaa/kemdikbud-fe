@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import Icon from '../../assets/logos/icon.png'
 import DropdownNav from '../../components/DropdownNav'
 import { profiles, publikasi, services, ppids, akuntabilitas } from '../../dummy/NavbarItems'
+import { NavLink } from 'react-router-dom'
 
 export default function MobileNav() {
     const [isActive, setIsActive] = useState(false)
@@ -15,7 +16,9 @@ export default function MobileNav() {
             <div className='md:hidden'>
                 <div className="flex items-center justify-between relative">
                     <div>
-                        <img src={Icon} height={50} width={50} />
+                        <NavLink to='/'>
+                            <img src={Icon} height={50} width={50} />
+                        </NavLink>
                     </div>
 
                     <button className={isActive ? 'block hamburger-active' : 'block'} onClick={toggleHamburger}>
