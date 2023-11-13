@@ -5,7 +5,7 @@ export const profiles = [
     { url: '/profile/tim-kerja', label: 'Tim Kerja' },
     { url: '/profile/janji-maklumat', label: 'Janji & Maklumat Layanan' },
     { url: '/profile/panduan-perilaku-core-value', label: 'Panduan Perilaku Core Value' },
-    { url: '/', label: 'Kantor - Kantor BBGP Jabar' },
+    { url: '/profile/office', label: 'Kantor - Kantor BGP Sulteng' },
 ]
 
 export const publikasi = [
