@@ -10,7 +10,7 @@ export const profiles = [
 
 export const publikasi = [
     { url: '/berita', label: 'Berita' },
-    { url: '/', label: 'Pengumuman' },
+    { url: '/pengumuman', label: 'Pengumuman' },
     { url: '/', label: 'Statistik Guru Jawa Barat' },
     { url: '/', label: 'Galeri' },
     { url: '/', label: 'Sejarah' },
