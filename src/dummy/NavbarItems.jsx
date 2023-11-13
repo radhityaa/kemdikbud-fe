@@ -14,7 +14,7 @@ export const publikasi = [
     { url: '/', label: 'Statistik Guru Jawa Barat' },
     { url: '/', label: 'Galeri' },
     { url: '/', label: 'Sejarah' },
-    { url: '/', label: 'Jurnal' },
+    { url: '/jurnal', label: 'Jurnal' },
 ]
 
 export const services = [
