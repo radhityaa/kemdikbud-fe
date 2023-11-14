@@ -22,7 +22,7 @@ export const services = [
     { url: '/program-sekolah-penggerak', label: 'Program Sekolah Penggerak' },
     { url: '/implementasi-kurikulum-merdeka', label: 'Implementasi Kurikulum Merdeka' },
     { url: '/', label: 'Inovasi BBGP Jabar' },
-    { url: '/', label: 'Kemitraan' },
+    { url: '/kemitraan', label: 'Kemitraan' },
     { url: '/', label: 'Internship Programme for Student with Disability (Blindness and Visual Impairment' },
     { url: '/', label: 'KPPD' },
 ]
