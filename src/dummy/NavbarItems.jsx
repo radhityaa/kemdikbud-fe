@@ -13,7 +13,7 @@ export const publikasi = [
     { url: '/pengumuman', label: 'Pengumuman' },
     { url: '/', label: 'Statistik Guru Jawa Barat' },
     { url: '/galeri', label: 'Galeri' },
-    { url: '/', label: 'Sejarah' },
+    { url: '/sejarah', label: 'Sejarah' },
     { url: '/jurnal', label: 'Jurnal' },
 ]
 
