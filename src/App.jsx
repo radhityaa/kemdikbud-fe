@@ -27,6 +27,7 @@ const DrivingSchoolProgram = lazy(() => import('./pages/Services/DrivingSchoolPr
 const IndependentCurriculum = lazy(() => import('./pages/Services/IndependentCurriculum'))
 const Partnership = lazy(() => import('./pages/Services/Partnership'))
 const InternshipProgramme = lazy(() => import('./pages/Services/InternshipProgramme'))
+const KPPD = lazy(() => import('./pages/Services/KPPD'))
 
 export default function App() {
   return (
@@ -64,6 +65,7 @@ export default function App() {
         <Route path="implementasi-kurikulum-merdeka" element={<IndependentCurriculum />} />
         <Route path="kemitraan" element={<Partnership />} />
         <Route path="internship-programme-for-student-with-disability" element={<InternshipProgramme />} />
+        <Route path="kppd" element={<KPPD />} />
 
       </Routes>
     </Suspense>
