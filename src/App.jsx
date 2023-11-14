@@ -21,8 +21,11 @@ const Journal = lazy(() => import('./pages/Journal'))
 const Gallery = lazy(() => import('./pages/Gallery'))
 const HistoryBgp = lazy(() => import('./pages/HistoryBgp'))
 
-// NOTE - Program Teacher Motivator
+// NOTE - Services
 const ProgramTeacherMotivator = lazy(() => import('./pages/Services/ProgramTeacherMotivator'))
+const DrivingSchoolProgram = lazy(() => import('./pages/Services/DrivingSchoolProgram'))
+const IndependentCurriculum = lazy(() => import('./pages/Services/IndependentCurriculum'))
+const Partnership = lazy(() => import('./pages/Services/Partnership'))
 
 export default function App() {
   return (
@@ -56,6 +59,9 @@ export default function App() {
         <Route path="sejarah" element={<HistoryBgp />} />
         {/* NOTE - Services */}
         <Route path="program-guru-penggerak" element={<ProgramTeacherMotivator />} />
+        <Route path="program-sekolah-penggerak" element={<DrivingSchoolProgram />} />
+        <Route path="implementasi-kurikulum-merdeka" element={<IndependentCurriculum />} />
+        <Route path="kemitraan" element={<Partnership />} />
 
       </Routes>
     </Suspense>
