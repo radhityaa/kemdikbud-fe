@@ -19,6 +19,7 @@ const Berita = lazy(() => import('./pages/Berita'))
 const Announcement = lazy(() => import('./pages/Announcement'))
 const Journal = lazy(() => import('./pages/Journal'))
 const Gallery = lazy(() => import('./pages/Gallery'))
+const HistoryBgp = lazy(() => import('./pages/HistoryBgp'))
 
 export default function App() {
   return (
@@ -49,6 +50,7 @@ export default function App() {
         <Route path="pengumuman" element={<Announcement />} />
         <Route path="jurnal" element={<Journal />} />
         <Route path="galeri" element={<Gallery />} />
+        <Route path="sejarah" element={<HistoryBgp />} />
 
       </Routes>
     </Suspense>
