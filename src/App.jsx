@@ -21,6 +21,9 @@ const Journal = lazy(() => import('./pages/Journal'))
 const Gallery = lazy(() => import('./pages/Gallery'))
 const HistoryBgp = lazy(() => import('./pages/HistoryBgp'))
 
+// NOTE - Program Teacher Motivator
+const ProgramTeacherMotivator = lazy(() => import('./pages/Services/ProgramTeacherMotivator'))
+
 export default function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -51,6 +54,8 @@ export default function App() {
         <Route path="jurnal" element={<Journal />} />
         <Route path="galeri" element={<Gallery />} />
         <Route path="sejarah" element={<HistoryBgp />} />
+        {/* NOTE - Services */}
+        <Route path="program-guru-penggerak" element={<ProgramTeacherMotivator />} />
 
       </Routes>
     </Suspense>

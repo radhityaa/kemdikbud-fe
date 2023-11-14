@@ -4,7 +4,7 @@ import IconChat from '../assets/icons/IconChat'
 import { NavLink } from 'react-router-dom'
 
 export default function MyCard(props) {
-    const { img, title, description, date, time, commentCount, url } = props
+    const { img, title, titleClass = 'text-blue-dark font-semibold line-clamp-3 hover:underline', description, date, time, commentCount, url } = props
 
     return (
         <div className='bg-white rounded shadow-lg'>
@@ -13,7 +13,7 @@ export default function MyCard(props) {
             </NavLink>
             <div className='p-5 space-y-3'>
                 <NavLink to={url}>
-                    <h1 className='text-blue-dark font-semibold line-clamp-3 hover:underline'>{title}</h1>
+                    <h1 className={titleClass}>{title}</h1>
                 </NavLink>
                 {description ? (
                     <p className='text-slate-700 line-clamp-3'>{description}</p>
