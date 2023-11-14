@@ -3,6 +3,7 @@ import Icon from '../../assets/logos/icon.png'
 import DropdownNav from '../../components/DropdownNav'
 import MobileNav from './MobileNav'
 import { profiles, publikasi, services, ppids, akuntabilitas } from '../../dummy/NavbarItems'
+import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
 
@@ -12,7 +13,9 @@ export default function Navbar() {
                 <MobileNav />
                 <div className="md:flex items-center hidden">
                     <div className='w-2/6'>
-                        <img src={Icon} height={50} width={50} />
+                        <NavLink to='/'>
+                            <img src={Icon} height={50} width={50} />
+                        </NavLink>
                     </div>
                     <div className="space-x-10">
                         <DropdownNav links={profiles} title={'Profil'} />

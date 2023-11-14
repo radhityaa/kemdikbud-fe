@@ -1,24 +1,24 @@
 export const profiles = [
-    { url: '/profile/visimisi', label: 'Visi & Misi' },
-    { url: '/profile/tugasfungsi', label: 'Tugas & Fungsi' },
+    { url: '/profile/visi-misi', label: 'Visi & Misi' },
+    { url: '/profile/tugas-fungsi', label: 'Tugas & Fungsi' },
     { url: '/profile/sejarah', label: 'Sejarah' },
-    { url: '/profile/timkerja', label: 'Tim Kerja' },
-    { url: '/', label: 'Janji & Maklumat Layanan' },
-    { url: '/', label: 'Panduan Perilaku Core Value' },
-    { url: '/', label: 'Kantor - Kantor BBGP Jabar' },
+    { url: '/profile/tim-kerja', label: 'Tim Kerja' },
+    { url: '/profile/janji-maklumat', label: 'Janji & Maklumat Layanan' },
+    { url: '/profile/panduan-perilaku-core-value', label: 'Panduan Perilaku Core Value' },
+    { url: '/profile/office', label: 'Kantor - Kantor BGP Sulteng' },
 ]
 
 export const publikasi = [
-    { url: '/', label: 'Berita' },
-    { url: '/', label: 'Pengumuman' },
+    { url: '/berita', label: 'Berita' },
+    { url: '/pengumuman', label: 'Pengumuman' },
     { url: '/', label: 'Statistik Guru Jawa Barat' },
-    { url: '/', label: 'Galeri' },
-    { url: '/', label: 'Sejarah' },
-    { url: '/', label: 'Jurnal' },
+    { url: '/galeri', label: 'Galeri' },
+    { url: '/sejarah', label: 'Sejarah' },
+    { url: '/jurnal', label: 'Jurnal' },
 ]
 
 export const services = [
-    { url: '/', label: 'Pendidikan Guru Penggerak' },
+    { url: '/program-guru-penggerak', label: 'Pendidikan Guru Penggerak' },
     { url: '/', label: 'Program Sekolah Penggerak' },
     { url: '/', label: 'Implementasi Kurikulum Mereka' },
     { url: '/', label: 'Inovasi BBGP Jabar' },

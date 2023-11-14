@@ -10,6 +10,19 @@ const VisionMission = lazy(() => import('./pages/Profile/VisionMission'))
 const JobFunction = lazy(() => import('./pages/Profile/JobFunction'))
 const History = lazy(() => import('./pages/Profile/History'))
 const WorkTeam = lazy(() => import('./pages/Profile/WorkTeam'))
+const PromiseProclamation = lazy(() => import('./pages/Profile/PromiseProclamation'))
+const BehaviorGuide = lazy(() => import('./pages/Profile/BehaviorGuide'))
+const Office = lazy(() => import('./pages/Profile/Office'))
+
+// NOTE - Publication
+const Berita = lazy(() => import('./pages/Berita'))
+const Announcement = lazy(() => import('./pages/Announcement'))
+const Journal = lazy(() => import('./pages/Journal'))
+const Gallery = lazy(() => import('./pages/Gallery'))
+const HistoryBgp = lazy(() => import('./pages/HistoryBgp'))
+
+// NOTE - Program Teacher Motivator
+const ProgramTeacherMotivator = lazy(() => import('./pages/Services/ProgramTeacherMotivator'))
 
 export default function App() {
   return (
@@ -27,11 +40,22 @@ export default function App() {
         {/* SECTION - Profile */}
         {/* NOTE - Vision And Mission */}
         <Route path="/profile">
-          <Route path="visimisi" element={<VisionMission />} />
-          <Route path="tugafungsi" element={<JobFunction />} />
+          <Route path="visi-misi" element={<VisionMission />} />
+          <Route path="tugas-fungsi" element={<JobFunction />} />
           <Route path="sejarah" element={<History />} />
-          <Route path="timkerja" element={<WorkTeam />} />
+          <Route path="tim-kerja" element={<WorkTeam />} />
+          <Route path="janji-maklumat" element={<PromiseProclamation />} />
+          <Route path="panduan-perilaku-core-value" element={<BehaviorGuide />} />
+          <Route path="office" element={<Office />} />
         </Route>
+        {/* NOTE - Publication */}
+        <Route path="berita" element={<Berita />} />
+        <Route path="pengumuman" element={<Announcement />} />
+        <Route path="jurnal" element={<Journal />} />
+        <Route path="galeri" element={<Gallery />} />
+        <Route path="sejarah" element={<HistoryBgp />} />
+        {/* NOTE - Services */}
+        <Route path="program-guru-penggerak" element={<ProgramTeacherMotivator />} />
 
       </Routes>
     </Suspense>
