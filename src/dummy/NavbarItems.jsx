@@ -24,7 +24,7 @@ export const services = [
     { url: '/', label: 'Inovasi BBGP Jabar' },
     { url: '/kemitraan', label: 'Kemitraan' },
     { url: '/internship-programme-for-student-with-disability', label: 'Internship Programme for Student with Disability (Blindness and Visual Impairment' },
-    { url: '/', label: 'KPPD' },
+    { url: '/kppd', label: 'KPPD' },
 ]
 
 export const ppids = [
