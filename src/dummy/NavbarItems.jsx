@@ -19,7 +19,7 @@ export const publikasi = [
 
 export const services = [
     { url: '/program-guru-penggerak', label: 'Pendidikan Guru Penggerak' },
-    { url: '/', label: 'Program Sekolah Penggerak' },
+    { url: '/program-sekolah-penggerak', label: 'Program Sekolah Penggerak' },
     { url: '/', label: 'Implementasi Kurikulum Mereka' },
     { url: '/', label: 'Inovasi BBGP Jabar' },
     { url: '/', label: 'Kemitraan' },
