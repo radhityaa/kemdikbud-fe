@@ -28,7 +28,7 @@ export const services = [
 ]
 
 export const ppids = [
-    { url: '/', label: 'Beranda' },
+    { url: '/ppid/beranda', label: 'Beranda' },
     { url: '/', label: 'Profil PPID' },
     { url: '/', label: 'Regulasi' },
     { url: '/', label: 'Informasi Publik' },

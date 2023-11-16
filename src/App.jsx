@@ -30,6 +30,9 @@ const Partnership = lazy(() => import('./pages/Services/Partnership'))
 const InternshipProgramme = lazy(() => import('./pages/Services/InternshipProgramme'))
 const KPPD = lazy(() => import('./pages/Services/KPPD'))
 
+// NOTE - PPID
+const PpidBeranda = lazy(() => import('./pages/PPID/Beranda'))
+
 export default function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -40,11 +43,10 @@ export default function App() {
         {/* NOTE - Not Found */}
         <Route path="*" element={<div>Not Found !</div>} />
 
-        {/* SECTION - Homepage */}
+        {/* NOTE - Homepage */}
         <Route index path="/" element={<Home />} />
 
-        {/* SECTION - Profile */}
-        {/* NOTE - Vision And Mission */}
+        {/* NOTE - Profile */}
         <Route path="/profile">
           <Route path="visi-misi" element={<VisionMission />} />
           <Route path="tugas-fungsi" element={<JobFunction />} />
@@ -54,6 +56,7 @@ export default function App() {
           <Route path="panduan-perilaku-core-value" element={<BehaviorGuide />} />
           <Route path="office" element={<Office />} />
         </Route>
+
         {/* NOTE - Publication */}
         <Route path="berita" element={<Berita />} />
         <Route path="berita/:id" element={<DetailBerita />} />
@@ -61,6 +64,7 @@ export default function App() {
         <Route path="jurnal" element={<Journal />} />
         <Route path="galeri" element={<Gallery />} />
         <Route path="sejarah" element={<HistoryBgp />} />
+
         {/* NOTE - Services */}
         <Route path="program-guru-penggerak" element={<ProgramTeacherMotivator />} />
         <Route path="program-sekolah-penggerak" element={<DrivingSchoolProgram />} />
@@ -68,6 +72,11 @@ export default function App() {
         <Route path="kemitraan" element={<Partnership />} />
         <Route path="internship-programme-for-student-with-disability" element={<InternshipProgramme />} />
         <Route path="kppd" element={<KPPD />} />
+
+        {/* NOTE - PPID */}
+        <Route path="/ppid">
+          <Route path="beranda" element={<PpidBeranda />} />
+        </Route>
 
       </Routes>
     </Suspense>
