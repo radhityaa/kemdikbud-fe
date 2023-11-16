@@ -37,6 +37,7 @@ const PpidProfileShort = lazy(() => import('./pages/PPID/ShortProfile'))
 const PpidOrganizationalStructure = lazy(() => import('./pages/PPID/OrganizationalStructure'))
 const PpidJobFunction = lazy(() => import('./pages/PPID/JobFunction'))
 const PpidVisiMission = lazy(() => import('./pages/PPID/VisiMission'))
+const PpidContactMe = lazy(() => import('./pages/PPID/ContactMe'))
 
 export default function App() {
   return (
@@ -86,6 +87,7 @@ export default function App() {
           <Route path="profile-struktur-organisasi" element={<PpidOrganizationalStructure />} />
           <Route path="tugas-dan-fungsi" element={<PpidJobFunction />} />
           <Route path="visi-dan-misi" element={<PpidVisiMission />} />
+          <Route path="kontak-kami" element={<PpidContactMe />} />
         </Route>
 
       </Routes>
