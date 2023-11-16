@@ -1,17 +1,13 @@
 import React from 'react'
 import Calendar from '../../../assets/icons/Calendar'
-import Image1 from '../../../assets/images/news/news4.jpg'
+import Folder from '../../../assets/icons/Folder'
 import Image2 from '../../../assets/images/news/detail.jpg'
+import Image1 from '../../../assets/images/news/news4.jpg'
 import ContentHeader from '../../../components/ContentHeader'
 import OtherNews from '../../../components/OtherNews'
+import ShareButton from '../../../components/ShareButton'
 import { OtherNewsDatas } from '../../../dummy/OtherNews'
 import App from '../../Layout/App'
-import Folder from '../../../assets/icons/Folder'
-import IconFacebook from '../../../assets/icons/IconFacebook'
-import IconTwitter from '../../../assets/icons/IconTwitter'
-import IconLinkedin from '../../../assets/icons/IconLinkedin'
-import IconWhatsapp from '../../../assets/icons/IconWhatsapp'
-import ShareButton from '../../../components/ShareButton'
 
 export default function DetailBerita() {
     return (
