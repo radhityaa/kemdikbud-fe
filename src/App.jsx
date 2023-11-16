@@ -16,6 +16,7 @@ const Office = lazy(() => import('./pages/Profile/Office'))
 
 // NOTE - Publication
 const Berita = lazy(() => import('./pages/Berita'))
+const DetailBerita = lazy(() => import('./pages/Berita/DetailBerita'))
 const Announcement = lazy(() => import('./pages/Announcement'))
 const Journal = lazy(() => import('./pages/Journal'))
 const Gallery = lazy(() => import('./pages/Gallery'))
@@ -55,6 +56,7 @@ export default function App() {
         </Route>
         {/* NOTE - Publication */}
         <Route path="berita" element={<Berita />} />
+        <Route path="berita/:id" element={<DetailBerita />} />
         <Route path="pengumuman" element={<Announcement />} />
         <Route path="jurnal" element={<Journal />} />
         <Route path="galeri" element={<Gallery />} />
