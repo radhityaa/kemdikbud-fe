@@ -32,6 +32,7 @@ const KPPD = lazy(() => import('./pages/Services/KPPD'))
 
 // NOTE - PPID
 const PpidBeranda = lazy(() => import('./pages/PPID/Beranda'))
+const PpidProfile = lazy(() => import('./pages/PPID/Profile'))
 
 export default function App() {
   return (
@@ -76,6 +77,7 @@ export default function App() {
         {/* NOTE - PPID */}
         <Route path="/ppid">
           <Route path="beranda" element={<PpidBeranda />} />
+          <Route path="profile" element={<PpidProfile />} />
         </Route>
 
       </Routes>
