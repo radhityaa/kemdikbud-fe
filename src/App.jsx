@@ -34,6 +34,7 @@ const KPPD = lazy(() => import('./pages/Services/KPPD'))
 const PpidBeranda = lazy(() => import('./pages/PPID/Beranda'))
 const PpidProfile = lazy(() => import('./pages/PPID/Profile'))
 const PpidProfileShort = lazy(() => import('./pages/PPID/ShortProfile'))
+const PpidOrganizationalStructure = lazy(() => import('./pages/PPID/OrganizationalStructure'))
 
 export default function App() {
   return (
@@ -80,6 +81,7 @@ export default function App() {
           <Route path="beranda" element={<PpidBeranda />} />
           <Route path="profile" element={<PpidProfile />} />
           <Route path="profile-singkat" element={<PpidProfileShort />} />
+          <Route path="profile-struktur-organisasi" element={<PpidOrganizationalStructure />} />
         </Route>
 
       </Routes>
