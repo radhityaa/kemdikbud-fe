@@ -4,7 +4,7 @@ import ContentHeader from '../../../components/ContentHeader'
 
 export default function VisiMission() {
     return (
-        <App title={'PPID'}>
+        <App title={'Visi dan Misi PPID'}>
             <ContentHeader text={'PPID'} title={'Visi dan Misi'} />
 
             <div className='grid md:grid-cols-2 gap-16'>
