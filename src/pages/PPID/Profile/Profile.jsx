@@ -11,7 +11,7 @@ export default function Profile() {
             <div>
                 <ProfilePpidItems url={'/ppid/profile-singkat'} title={'Profile Singkat PPID BGP Sulteng'} />
                 <ProfilePpidItems url={'/ppid/profile-struktur-organisasi'} title={'Struktur Organisasi PPID'} />
-                <ProfilePpidItems url={'#'} title={'Tugas dan Fungsi PPID'} />
+                <ProfilePpidItems url={'/ppid/tugas-dan-fungsi'} title={'Tugas dan Fungsi PPID'} />
                 <ProfilePpidItems url={'#'} title={'Visi dan Misi PPID'} />
                 <ProfilePpidItems url={'#'} title={'Kontak Kami'} />
             </div>
