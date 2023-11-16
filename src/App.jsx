@@ -33,6 +33,7 @@ const KPPD = lazy(() => import('./pages/Services/KPPD'))
 // NOTE - PPID
 const PpidBeranda = lazy(() => import('./pages/PPID/Beranda'))
 const PpidProfile = lazy(() => import('./pages/PPID/Profile'))
+const PpidProfileShort = lazy(() => import('./pages/PPID/ShortProfile'))
 
 export default function App() {
   return (
@@ -78,6 +79,7 @@ export default function App() {
         <Route path="/ppid">
           <Route path="beranda" element={<PpidBeranda />} />
           <Route path="profile" element={<PpidProfile />} />
+          <Route path="profile-singkat" element={<PpidProfileShort />} />
         </Route>
 
       </Routes>
