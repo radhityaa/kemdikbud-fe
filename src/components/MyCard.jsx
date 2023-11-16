@@ -24,10 +24,6 @@ export default function MyCard(props) {
                             <IconDate />
                             <span>{date}</span> <span>pkl. {time}</span>
                         </div>
-                        <div className='flex items-center gap-2 text-slate-700'>
-                            <IconChat />
-                            <span>{commentCount} Komentar</span>
-                        </div>
                     </div>
                 ) : null}
             </div>

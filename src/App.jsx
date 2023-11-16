@@ -16,6 +16,7 @@ const Office = lazy(() => import('./pages/Profile/Office'))
 
 // NOTE - Publication
 const Berita = lazy(() => import('./pages/Berita'))
+const DetailBerita = lazy(() => import('./pages/Berita/DetailBerita'))
 const Announcement = lazy(() => import('./pages/Announcement'))
 const Journal = lazy(() => import('./pages/Journal'))
 const Gallery = lazy(() => import('./pages/Gallery'))
@@ -26,6 +27,8 @@ const ProgramTeacherMotivator = lazy(() => import('./pages/Services/ProgramTeach
 const DrivingSchoolProgram = lazy(() => import('./pages/Services/DrivingSchoolProgram'))
 const IndependentCurriculum = lazy(() => import('./pages/Services/IndependentCurriculum'))
 const Partnership = lazy(() => import('./pages/Services/Partnership'))
+const InternshipProgramme = lazy(() => import('./pages/Services/InternshipProgramme'))
+const KPPD = lazy(() => import('./pages/Services/KPPD'))
 
 export default function App() {
   return (
@@ -53,6 +56,7 @@ export default function App() {
         </Route>
         {/* NOTE - Publication */}
         <Route path="berita" element={<Berita />} />
+        <Route path="berita/:id" element={<DetailBerita />} />
         <Route path="pengumuman" element={<Announcement />} />
         <Route path="jurnal" element={<Journal />} />
         <Route path="galeri" element={<Gallery />} />
@@ -62,6 +66,8 @@ export default function App() {
         <Route path="program-sekolah-penggerak" element={<DrivingSchoolProgram />} />
         <Route path="implementasi-kurikulum-merdeka" element={<IndependentCurriculum />} />
         <Route path="kemitraan" element={<Partnership />} />
+        <Route path="internship-programme-for-student-with-disability" element={<InternshipProgramme />} />
+        <Route path="kppd" element={<KPPD />} />
 
       </Routes>
     </Suspense>

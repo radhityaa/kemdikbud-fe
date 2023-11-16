@@ -23,8 +23,8 @@ export const services = [
     { url: '/implementasi-kurikulum-merdeka', label: 'Implementasi Kurikulum Merdeka' },
     { url: '/', label: 'Inovasi BBGP Jabar' },
     { url: '/kemitraan', label: 'Kemitraan' },
-    { url: '/', label: 'Internship Programme for Student with Disability (Blindness and Visual Impairment' },
-    { url: '/', label: 'KPPD' },
+    { url: '/internship-programme-for-student-with-disability', label: 'Internship Programme for Student with Disability (Blindness and Visual Impairment' },
+    { url: '/kppd', label: 'KPPD' },
 ]
 
 export const ppids = [
