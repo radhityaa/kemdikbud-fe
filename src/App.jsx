@@ -39,6 +39,16 @@ const PpidJobFunction = lazy(() => import('./pages/PPID/JobFunction'))
 const PpidVisiMission = lazy(() => import('./pages/PPID/VisiMission'))
 const PpidContactMe = lazy(() => import('./pages/PPID/ContactMe'))
 
+// NOTE - PPID Regulations
+const Regulasi = lazy(() => import('./pages/PPID/Regulations'))
+const PenangananSengketaInformasiPublik = lazy(() => import('./pages/PPID/Regulations/PenangananSengketaInformasiPublik'))
+const PendokumentasianInformasiPublik = lazy(() => import('./pages/PPID/Regulations/PendokumentasianInformasiPublik'))
+const PendokumentasianInformasiYangDiKecualikan = lazy(() => import('./pages/PPID/Regulations/PendokumentasianInformasiYangDiKecualikan'))
+const PenetapanDanPemutakahiranDaftarInformasiPublik = lazy(() => import('./pages/PPID/Regulations/PenetapanDanPemutakahiranDaftarInformasiPublik'))
+const PengelolaanKeberatanAtasInformasi = lazy(() => import('./pages/PPID/Regulations/PengelolaanKeberatanAtasInformasi'))
+const PengelolaanPermohonanInformasi = lazy(() => import('./pages/PPID/Regulations/PengelolaanPermohonanInformasi'))
+const PengujianKonsekuensi = lazy(() => import('./pages/PPID/Regulations/PengujianKonsekuensi'))
+
 export default function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -88,6 +98,17 @@ export default function App() {
           <Route path="tugas-dan-fungsi" element={<PpidJobFunction />} />
           <Route path="visi-dan-misi" element={<PpidVisiMission />} />
           <Route path="kontak-kami" element={<PpidContactMe />} />
+          {/* Regulations */}
+          <Route path="regulasi">
+            <Route path="" element={<Regulasi />} />
+            <Route path="penanganan-sengketa-informasi-publik" element={<PenangananSengketaInformasiPublik />} />
+            <Route path="pendokumentasian-informasi-publik" element={<PendokumentasianInformasiPublik />} />
+            <Route path="pendokumentasian-informasi-yang-di-kecualikan" element={<PendokumentasianInformasiYangDiKecualikan />} />
+            <Route path="penetapan-dan-pemutakahiran-daftar-informasi-publik" element={<PenetapanDanPemutakahiranDaftarInformasiPublik />} />
+            <Route path="pengelolaan-keberatan-atas-informasi" element={<PengelolaanKeberatanAtasInformasi />} />
+            <Route path="pengelolaan-permohonan-informasi" element={<PengelolaanPermohonanInformasi />} />
+            <Route path="pengujian-konsekuensi" element={<PengujianKonsekuensi />} />
+          </Route>
         </Route>
 
       </Routes>
